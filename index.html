@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website work properly on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Place in My Heart ♡</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         BACKGROUND MUSIC
+    ====================================== -->
+
+    <audio id="bgMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =====================================
+         BACKGROUND
+    ====================================== -->
+
+    <div class="background">
+
+        <div class="stars"></div>
+
+        <div class="moon"></div>
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="particles"></div>
+
+    </div>
+
+
+    <!-- =====================================
+         01 — THE DOOR
+    ====================================== -->
+
+    <section id="entryScreen" class="screen active">
+
+        <div class="entry-container">
+
+            <p class="eyebrow">
+                a little secret place...
+            </p>
+
+
+            <h1>
+                A Place
+                <br>
+                <span>in My Heart</span>
+            </h1>
+
+
+            <p class="intro-text">
+                Not everyone has a key.
+            </p>
+
+
+            <!-- NAME -->
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Enter your name..."
+                    autocomplete="off"
+                >
+
+
+                <!-- PERSONAL CODE -->
+
+                <input
+                    type="password"
+                    id="codeInput"
+                    placeholder="Enter your personal code..."
+                    autocomplete="off"
+                >
+
+
+                <button id="enterButton">
+                    ENTER ♡
+                </button>
+
+            </div>
+
+
+            <!-- ERROR MESSAGE -->
+
+            <p id="errorMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         02 — WELCOME
+    ====================================== -->
+
+    <section id="welcomeScreen" class="screen">
+
+        <div class="welcome-container">
+
+            <p class="eyebrow">
+                the door opened...
+            </p>
+
+
+            <h2>
+                Welcome,
+                <span id="friendName"></span> ♡
+            </h2>
+
+
+            <p class="welcome-text">
+                I knew you'd find your way here.
+            </p>
+
+
+            <button id="openLetterButton">
+                OPEN YOUR LETTER →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         03 — LETTER
+    ====================================== -->
+
+    <section id="letterScreen" class="screen">
+
+        <div class="letter-container">
+
+
+            <!-- ENVELOPE -->
+
+            <div
+                class="envelope"
+                id="envelope"
+            >
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-body">
+                    💌
+                </div>
+
+            </div>
+
+
+            <p
+                class="envelope-hint"
+                id="envelopeHint"
+            >
+                Something was written for you...
+            </p>
+
+
+            <!-- LETTER -->
+
+            <div
+                class="letter"
+                id="letter"
+            >
+
+                <p id="letterText"></p>
+
+
+                <p class="signature">
+                    With love,
+                    <br>
+                    <span>from my heart ♡</span>
+                </p>
+
+
+                <!-- Appears only after letter finishes -->
+
+                <button
+                    id="continueButton"
+                    class="hidden"
+                >
+                    ONE MORE THING... →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         04 — LITTLE THINGS
+    ====================================== -->
+
+    <section id="littleThingsScreen" class="screen">
+
+        <div class="little-things-container">
+
+            <p class="eyebrow">
+                before you go...
+            </p>
+
+
+            <h2>
+                A few little things
+                <br>
+                <span>I want you to know.</span>
+            </h2>
+
+
+            <div class="cards-container">
+
+
+                <!-- CARD 1 -->
+
+                <div class="little-card" data-card="matter">
+
+                    <div class="card-front">
+                        <span>♡</span>
+                        <h3>You Matter</h3>
+                        <p>tap to open</p>
+                    </div>
+
+                    <div class="card-back">
+                        <p id="matterMessage"></p>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 2 -->
+
+                <div class="little-card" data-card="friendship">
+
+                    <div class="card-front">
+                        <span>✦</span>
+                        <h3>Our Friendship</h3>
+                        <p>tap to open</p>
+                    </div>
+
+                    <div class="card-back">
+                        <p id="friendshipMessage"></p>
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 3 -->
+
+                <div class="little-card" data-card="promise">
+
+                    <div class="card-front">
+                        <span>☁</span>
+                        <h3>A Little Promise</h3>
+                        <p>tap to open</p>
+                    </div>
+
+                    <div class="card-back">
+                        <p id="promiseMessage"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Appears after all 3 cards are opened -->
+
+            <div
+                id="littleThingsComplete"
+                class="hidden"
+            >
+
+                <p>
+                    You found all three... ✨
+                </p>
+
+                <button id="gameButton">
+                    THERE'S ONE MORE →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         05 — MINI GAME
+    ====================================== -->
+
+    <section id="gameScreen" class="screen">
+
+        <div class="game-container">
+
+            <p class="eyebrow">
+                just a tiny challenge...
+            </p>
+
+
+            <h2>
+                Catch the Hearts ♡
+            </h2>
+
+
+            <p class="game-instruction">
+                Catch 10 hearts before they disappear.
+            </p>
+
+
+            <div id="gameArea">
+
+                <!-- Hearts will appear here using JavaScript -->
+
+            </div>
+
+
+            <p class="score">
+                Hearts caught:
+                <span id="score">0</span> / 10
+            </p>
+
+
+            <button
+                id="secretDoorButton"
+                class="hidden"
+            >
+                YOU FOUND IT → 🔐
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         06 — SECRET DOOR
+    ====================================== -->
+
+    <section id="secretScreen" class="screen">
+
+        <div class="secret-container">
+
+            <p class="eyebrow">
+                you made it this far...
+            </p>
+
+
+            <h2>
+                There's one last door.
+            </h2>
+
+
+            <div class="secret-door">
+                🔐
+            </div>
+
+
+            <p>
+                Some things are better
+                discovered than explained.
+            </p>
+
+
+            <button id="openSecretButton">
+                OPEN THE LAST DOOR →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         07 — FINAL PAGE
+    ====================================== -->
+
+    <section id="finalScreen" class="screen">
+
+        <div class="final-container">
+
+            <p class="eyebrow">
+                you found your way home...
+            </p>
+
+
+            <h2>
+                You have a little
+                <br>
+                <span>corner here.</span>
+            </h2>
+
+
+            <p id="finalMessage">
+                No matter where life takes us,
+                you'll always have a place here.
+            </p>
+
+
+            <div class="final-heart">
+                ♡
+            </div>
+
+
+            <p class="final-name">
+                <span id="finalFriendName"></span>
+            </p>
+
+
+            <button id="restartButton">
+                RETURN TO THE DOOR ↻
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
