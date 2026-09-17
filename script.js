@@ -59,27 +59,42 @@ const friends = {
         code: "star",
 
         letter: `
-            Dear Seethalakshmi,
+           **To my Seetha 🤍,**
 
-            Some people become part of our lives
-            through the simplest conversations.
+Some friendships don't need a dramatic beginning.
+Sometimes, you simply meet someone in college, start talking, and without even realizing it, they slowly become a beautiful part of your life.
 
-            Somehow those conversations become memories,
-            and those memories become something special.
+That's exactly how I feel about you.
 
-            This little corner is yours.
+You are someone I can talk to without having to think too much about what to say. I can share my thoughts, my little problems, my overthinking, and the random things happening in my life—and somehow, talking to you always feels comfortable.
 
-            ♡
+What makes our friendship special to me is that feeling of being understood without having to explain everything perfectly. You listen, you understand, and you make things feel a little lighter.
+
+College gave me many people to know, but I'm really glad it gave me **you**.
+
+Maybe we don't always say how much our friends mean to us. Maybe we get busy, days pass, and life keeps moving. But that doesn't make the place someone holds in our heart any smaller.
+
+So, Seetha, I just want you to know that you're not simply someone I happened to meet in college.
+
+**You're someone I'm genuinely grateful I met.** 🤍
+
+Thank you for being a part of my college days, my conversations, my little moments, and my life.
+
+And no matter where life takes us after college, I hope this friendship remains one of those beautiful things we can always look back on and smile about.
+
+**With lots of love,
+varsh ♡**
+
         `,
 
         matter:
-            "Never forget that your presence can make someone's day better.",
+            "You make even the simplest college days feel a little more special. 🤍",
 
         friendship:
-            "Our friendship is one of those little stories I am happy life wrote for me.",
+            "I'm genuinely lucky that college gave me a friend like you. 🫶🏻",
 
         promise:
-            "There will always be a tiny place here with your name on it."
+            "No matter where life takes us, I'll always value and protect our friendship. ♾️"
 
     },
 
